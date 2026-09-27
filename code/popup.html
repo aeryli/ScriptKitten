@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriptkitten Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #111116;
+            --card-bg: #1e1e24;
+            --accent-color: #ff4c4c; /* PenguinMod/Kitten inspired red-orange */
+            --text-main: #ffffff;
+            --text-muted: #a0a0a5;
+            --border-color: #2d2d34;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 16px;
+            width: 320px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header img {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+        }
+
+        .header h1 {
+            font-size: 18px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .version {
+            font-size: 11px;
+            color: var(--text-muted);
+            background: var(--border-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: auto;
+        }
+
+        .description {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin: 12px 0;
+            line-height: 1.4;
+        }
+
+        .status-container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+
+        .status-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #ff4c4c;
+            border-radius: 50px;
+        }
+
+        .status-dot.active {
+            background-color: #4caf50;
+            box-shadow: 0 0 8px #4caf50;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 14px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .footer {
+            margin-top: 14px;
+            text-align: center;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="../assets/favicon_32x32.png" alt="Scriptkitten Logo">
+        <h1>Scriptkitten</h1>
+        <span class="version">v2025.8.31</span>
+    </div>
+
+    <p class="description">
+        Custom addon manager for Penguinmod, Turbowarp, and supporting Scratch modifications.
+    </p>
+
+    <div class="status-container">
+        <div class="status-row">
+            <span>Current Site Status:</span>
+            <span class="status-badge" id="status-badge">
+                <span class="status-dot" id="status-dot"></span>
+                <span id="status-text">Inactive</span>
+            </span>
+        </div>
+    </div>
+
+    <button class="btn" id="open-manager">Open Addon Manager</button>
+
+    <div class="footer">
+        Ready to modify your studio experience.
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
