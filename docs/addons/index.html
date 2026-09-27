@@ -399,7 +399,7 @@
             }
             async function loadAddons() {
                 try {
-                    repoUrl = 'https://api.github.com/repos/pooiod/ScriptKitten/contents/addons';
+                    repoUrl = 'https://api.github.com/repos/aeryli/ScriptKitten/contents/docs/addons/';
                     const response = await fetch(repoUrl);
                     if (!response.ok) throw new Error(`GitHub API error: ${response.status}`);
                     const files = await response.json();
