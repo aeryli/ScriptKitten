@@ -13,6 +13,10 @@
       "matches": ["https://studio.penguinmod.com/*", "https://mirror.turbowarp.xyz/*", "https://turbowarp.org/*", "https://dinosaurmod.github.io/*", "https://snail-ide.js.org/*", "https://librekitten.org/*", "https://alpha.unsandboxed.org/*", "https://ampmod.codeberg.page/*", "https://espressoblocks.com/*"],
       "js": ["docs/manager.user.js"],
       "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://*"],
+      "js": ["*.js"]
     }
   ]
 }
