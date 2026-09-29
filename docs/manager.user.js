@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         ScriptKitten
-// @namespace    https://scriptkitten.pages.dev
+// @namespace    https://aeryli.github.io/scriptkitten
 // @version      08-31-2025
 // @description  Adds a custom addon manager to Penguinmod, Turbowarp, and a few other mods
 // @author       pooiod7
-// @updateURL    https://scriptkitten.pages.dev/manager.meta.js
-// @downloadURL  https://scriptkitten.pages.dev/manager.user.js
+// @updateURL    https://aeryli.github.io/scriptkitten/manager.meta.js
+// @downloadURL  https://aeryli.github.io/scriptkitten/manager.user.js
 // @include      https://studio.penguinmod.com/*
 // @include      https://mirror.turbowarp.xyz/*
 // @include      https://turbowarp.org/*
@@ -15,7 +15,7 @@
 // @include      https://alpha.unsandboxed.org/*
 // @include      https://ampmod.codeberg.page/*
 // @include      https://espressoblocks.com/*
-// @icon         https://scriptkitten.pages.dev/favicon.ico
+// @icon         https://aeryli.github.io/scriptkitten/favicon.ico
 // @grant        none
 // ==/UserScript==
 
