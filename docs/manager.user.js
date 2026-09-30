@@ -565,7 +565,7 @@ addons.getSettings()["scripts"].forEach(function(url) {
 				target: { tabId: activeTabId },
 				files: [url]
 			});
-			eval(code);
+			//eval(code);
 
 			if (window.Scratch != oldScratch) window.Scratch = oldScratch
 		})
