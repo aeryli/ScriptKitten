@@ -8,7 +8,8 @@
   "action": { "default_popup": "code/popup.html" },
   "permissions": ["scripting", "activeTab", "userScripts"],
   "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'self';" },
-  
+
+  "service_worker": "code/background.js",
   "content_scripts": [{
       "matches": ["https://studio.penguinmod.com/*", "https://mirror.turbowarp.xyz/*", "https://turbowarp.org/*", "https://dinosaurmod.github.io/*", "https://snail-ide.js.org/*", "https://librekitten.org/*", "https://alpha.unsandboxed.org/*", "https://ampmod.codeberg.page/*", "https://espressoblocks.com/*"],
       "js": ["docs/manager.user.js"],
