@@ -1,5 +1,5 @@
 chrome.scripting.executeScript({
-  target: { tabId: tabId },
+  target: { tabId: chrome.tabs.getCurrent() },
   func: () => {
     console.log("Injected successfully!");
   }
