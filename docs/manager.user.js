@@ -561,7 +561,10 @@ addons.getSettings()["scripts"].forEach(function(url) {
 
 				window.Scratch = Scratch;
 			}
-
+			chrome.scripting.executeScript({
+				target: { tabId: activeTabId },
+				files: [url]
+			});
 			eval(code);
 
 			if (window.Scratch != oldScratch) window.Scratch = oldScratch
