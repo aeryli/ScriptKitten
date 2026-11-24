@@ -409,7 +409,7 @@
                         return;
                     }
                     const scriptDataPromises = jsFiles.map(async (file) => {
-                        const scriptUrl = `https://scriptkitten.pages.dev/addons/${file.name}`;
+                        const scriptUrl = `https://aeryli.github.io/scriptkitten/addons/${file.name}`;
                         try {
                             const scriptResponse = await fetch(scriptUrl);
                             if (!scriptResponse.ok) return null;
@@ -483,7 +483,7 @@
                 }
                 if (copyButton) {
                     const filename = copyButton.dataset.filename;
-                    const url = `https://scriptkitten.pages.dev/addons/${filename}`;
+                    const url = `https://aeryli.github.io/scriptkitten/addons/${filename}`;
                     navigator.clipboard.writeText(url).then(() => {
                         const originalText = copyButton.textContent;
                         copyButton.textContent = 'Copied!';
