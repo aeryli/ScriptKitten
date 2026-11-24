@@ -1,4 +1,4 @@
-// id: P7BlockLink
+// id: P7BlockLink-mod
 
 (function(addons) {
 	'use strict';
@@ -33,7 +33,7 @@
 			if (this.active) return;
 			this.active = true;
 
-			fetch("https://p7scratchextensions.pages.dev/ext/BlockLink/main.js")
+			fetch("https://raw.githubusercontent.com/aeryli/ScratchExtensions/refs/heads/patch-1/ext/BlockLink/main.js")
 				.then(function(response) {
 					if (!response.ok) throw new Error("Network response was not ok");
 					return response.text();
